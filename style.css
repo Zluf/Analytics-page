@@ -1,0 +1,308 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*Common styling*/
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body * {
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+/* Coulours */
+
+.colours {
+  background: #080C2F;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 55%, 100% 0);
+  /* margin-top: -200px; */
+}
+
+.colours img {
+  position: absolute;
+  top:25px;
+  right:70px;
+  height: 70px;
+  z-index: 2;
+}
+
+.magenta, .cyan {
+
+  width: 205vw;
+  height: 205vw;
+}
+
+.magenta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #D8315B;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.cyan {
+  position: absolute;
+  bottom: 0;
+  right: -200px;
+  background: #40CCCC;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.white {
+  display: none;
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+/* Main */
+
+main {
+  background: #EDEEF2;
+  width: 100%;
+  height: 100vh;
+  margin-top: -100vh;
+  padding-left: 20px;
+}
+
+main * {
+  display: block;
+}
+
+.login {
+  padding-top: 230px;
+}
+
+span {
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+
+.input-field {
+  width: 316px;
+  height: 54px;
+  background: white;
+  border: 1px solid #D1D3D9;
+  margin: 15px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input, input:focus {
+  border: none;
+  outline: none;
+  width: 90%;
+  font-size: 14px;
+}
+
+.button {
+  width: 316px;
+  height: 54px;
+  background: #080C2F;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+
+a:nth-of-type(2) {
+  color: #080C2F;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 500px) {
+
+  .body {
+    display: flex;
+  }
+
+  .colours {
+    background: #080C2F;
+    width: 35%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    clip-path: none;
+  }
+
+  .colours img {
+    position: static;
+    height: 16%;
+    margin-top: -28vw;
+  }
+
+  .magenta, .cyan {
+    width: 35vw;
+    height: 35vw;
+    /* width: 400px;
+    height: 400px; */
+  }
+
+  .magenta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #D8315B;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+
+  .cyan {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #40CCCC;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+
+  .white {
+    display: block;
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+
+  main {
+    background: #EDEEF2;
+    width: 65%;
+    height: 100vh;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login {
+    padding-top: 0px;
+  }
