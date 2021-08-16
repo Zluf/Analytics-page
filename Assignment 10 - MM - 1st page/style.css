@@ -117,13 +117,14 @@ body * {
 
 .colours {
   background: #080C2F;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+  width: 80vw;
+  height: 80vh;
+  top:0;
+  right: 0;
+  position: absolute;
   display: flex;
   justify-content: center;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 55%, 100% 0);
   /* margin-top: -200px; */
 }
 
@@ -136,7 +137,6 @@ body * {
 }
 
 .magenta, .cyan {
-
   width: 205vw;
   height: 205vw;
 }
@@ -235,7 +235,7 @@ a:nth-of-type(2) {
   font-size: 14px;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1000px) {
 
   .body {
     display: flex;
