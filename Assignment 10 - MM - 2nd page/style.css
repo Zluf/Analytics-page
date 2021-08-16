@@ -169,7 +169,11 @@ body > nav ul a:nth-child(2) {
 
 section {
   width: 100%;
-  padding: 0 8%;
+}
+
+.container, .presentations {
+  padding: 0 8vw;
+  box-sizing: border-box;
 }
 
 section > * {
@@ -195,7 +199,6 @@ section nav {
   border-radius: 10%;
 }
 
-
 section > nav > ul .button {
   background: #080C2F;
   font-size: 0.7vw;
@@ -219,15 +222,11 @@ section > ul {
 }
 
 section > ul > li {
-  /* max-width: 25vw; */
-  /* min-width: 200px; */
-  /* height: 280px; */
   background: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 10%;
-  box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -260,10 +259,6 @@ section ul li nav ul img {
   margin-left: .3vw;
 }
 
-.title * {
-  /* margin-bottom: 8%; */
-}
-
 .title h3 {
   width: 83%;
   font-size: 1.1vw;
@@ -277,11 +272,13 @@ section ul li nav ul img {
   color: #AFAFAF;
 }
 
-.linear {
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(0deg, #EDEEF2, transparent 30%);
+.shadow {
+  position: fixed;
+  bottom: -28vh;
+  width: 100vw;
+  height: 200px;
+  background-color: #EDEEF2;
+  box-shadow: 10px -10px 80px 50px #EDEEF2;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -376,5 +373,9 @@ section ul li nav ul img {
   section ul li nav ul img {
     height: 4.5vw;
     margin-left: 3vw;
+  }
+
+  .shadow {
+    display: none;
   }
 }
