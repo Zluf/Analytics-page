@@ -168,6 +168,7 @@ body > nav ul a:nth-child(2) {
 /* SECTION */
 
 section {
+  margin-top: 2.6vw;
   width: 100%;
 }
 
@@ -177,7 +178,7 @@ section {
 }
 
 section > * {
-  margin-top: 5vh;
+  margin-bottom: 2vw;
 }
 
 h2 {
@@ -219,6 +220,7 @@ section > ul {
   grid-template-rows: repeat(3, 35vh);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2vw;
+  margin-bottom: 15vh;
 }
 
 section > ul > li {
@@ -321,6 +323,14 @@ section ul li nav ul img {
     font-size: 5.8vw;
   }
 
+  section {
+    margin-top: 10vw;
+  }
+
+  section > * {
+    margin-bottom: 7vw;
+  }
+
   section > nav {
     align-items: flex-start;
     flex-direction: column;
@@ -330,7 +340,7 @@ section ul li nav ul img {
     font-size: 3.2vw;
     padding: 3vw 5vw;
     border-radius: 5px;
-    margin-bottom: 5vmin;
+    margin-bottom: 5vw;
   }
 
   section nav ul .button {
@@ -346,7 +356,7 @@ section ul li nav ul img {
 
   section > ul li {
     margin-bottom: 8vw;
-    padding: 4vh;
+    padding: 4vw;
   }
 
   section > ul li .title p {
