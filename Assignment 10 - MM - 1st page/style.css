@@ -117,7 +117,7 @@ body * {
 
 .colours {
   background: #080C2F;
-  width: 80vw;
+  width: 100vw;
   height: 80vh;
   top:0;
   right: 0;
@@ -125,6 +125,7 @@ body * {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  clip-path: polygon(0 0, 100% 200px, 100% 0);
   /* margin-top: -200px; */
 }
 
@@ -137,22 +138,23 @@ body * {
 }
 
 .magenta, .cyan {
-  width: 205vw;
-  height: 205vw;
+  width: 255px;
+  height: 255px;
 }
 
 .magenta {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  right: 0;
+  top: 0;
   background: #D8315B;
   clip-path: polygon(0 0, 0% 100%, 100% 100%);
 }
 
 .cyan {
   position: absolute;
-  bottom: 0;
-  right: -200px;
+  top: 0;
+  right: 0;
+  /* right: -200px; */
   background: #40CCCC;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
@@ -172,10 +174,9 @@ body * {
 
 main {
   background: #EDEEF2;
-  width: 100%;
   height: 100vh;
-  margin-top: -100vh;
-  padding-left: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 main * {
@@ -183,7 +184,7 @@ main * {
 }
 
 .login {
-  padding-top: 230px;
+  padding-top: 25vh;
 }
 
 span {
@@ -192,7 +193,7 @@ span {
 }
 
 .input-field {
-  width: 316px;
+  max-width: 300px;
   height: 54px;
   background: white;
   border: 1px solid #D1D3D9;
@@ -216,7 +217,7 @@ input, input:focus {
 }
 
 .button {
-  width: 316px;
+  width: 300px;
   height: 54px;
   background: #080C2F;
   font-size: 20px;
@@ -301,6 +302,7 @@ a:nth-of-type(2) {
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   .login {
